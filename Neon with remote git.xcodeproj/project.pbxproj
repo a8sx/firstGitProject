@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		60EB4CA62042E04200F550A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CA52042E04200F550A5 /* AppDelegate.swift */; };
-		60EB4CA82042E04200F550A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CA72042E04200F550A5 /* ViewController.swift */; };
+		60EB4CA82042E04200F550A5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CA72042E04200F550A5 /* FirstViewController.swift */; };
 		60EB4CAB2042E04200F550A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EB4CA92042E04200F550A5 /* Main.storyboard */; };
 		60EB4CAD2042E04200F550A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EB4CAC2042E04200F550A5 /* Assets.xcassets */; };
 		60EB4CB02042E04200F550A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EB4CAE2042E04200F550A5 /* LaunchScreen.storyboard */; };
+		60EB4CB920434D7C00F550A5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CB820434D7C00F550A5 /* ViewExtensions.swift */; };
+		60EB4CBC20434FF100F550A5 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CBB20434FF100F550A5 /* ViewHelper.swift */; };
+		60EB4CBF204350F000F550A5 /* SimpleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB4CBE204350F000F550A5 /* SimpleLabelView.swift */; };
 		A924D0DBDF0777C9A5C1F2D5 /* Pods_Neon_with_remote_git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC3D72B8A817B90D6397AE /* Pods_Neon_with_remote_git.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60EB4CA22042E04200F550A5 /* Neon with remote git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neon with remote git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EB4CA52042E04200F550A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60EB4CA72042E04200F550A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60EB4CA72042E04200F550A5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		60EB4CAA2042E04200F550A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60EB4CAC2042E04200F550A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EB4CAF2042E04200F550A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60EB4CB12042E04200F550A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60EB4CB820434D7C00F550A5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		60EB4CBB20434FF100F550A5 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		60EB4CBE204350F000F550A5 /* SimpleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabelView.swift; sourceTree = "<group>"; };
 		69DCFAD03685C4E4EFACD12F /* Pods-Neon with remote git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon with remote git.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neon with remote git/Pods-Neon with remote git.release.xcconfig"; sourceTree = "<group>"; };
 		9FDC3D72B8A817B90D6397AE /* Pods_Neon_with_remote_git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neon_with_remote_git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C247417C5491443FC66EEC69 /* Pods-Neon with remote git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon with remote git.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neon with remote git/Pods-Neon with remote git.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,14 +75,49 @@
 		60EB4CA42042E04200F550A5 /* Neon with remote git */ = {
 			isa = PBXGroup;
 			children = (
-				60EB4CA52042E04200F550A5 /* AppDelegate.swift */,
-				60EB4CA72042E04200F550A5 /* ViewController.swift */,
+				60EB4CBD204350C300F550A5 /* View */,
+				60EB4CBA20434FC400F550A5 /* Helper */,
+				60EB4CB720434D5F00F550A5 /* Extension */,
+				60EB4CC02043549100F550A5 /* Controller */,
 				60EB4CA92042E04200F550A5 /* Main.storyboard */,
 				60EB4CAC2042E04200F550A5 /* Assets.xcassets */,
 				60EB4CAE2042E04200F550A5 /* LaunchScreen.storyboard */,
 				60EB4CB12042E04200F550A5 /* Info.plist */,
 			);
 			path = "Neon with remote git";
+			sourceTree = "<group>";
+		};
+		60EB4CB720434D5F00F550A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				60EB4CB820434D7C00F550A5 /* ViewExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		60EB4CBA20434FC400F550A5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				60EB4CBB20434FF100F550A5 /* ViewHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		60EB4CBD204350C300F550A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60EB4CBE204350F000F550A5 /* SimpleLabelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60EB4CC02043549100F550A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60EB4CA52042E04200F550A5 /* AppDelegate.swift */,
+				60EB4CA72042E04200F550A5 /* FirstViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		773E48FE5B6F926F57959706 /* Pods */ = {
@@ -217,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60EB4CA82042E04200F550A5 /* ViewController.swift in Sources */,
+				60EB4CA82042E04200F550A5 /* FirstViewController.swift in Sources */,
+				60EB4CBF204350F000F550A5 /* SimpleLabelView.swift in Sources */,
+				60EB4CB920434D7C00F550A5 /* ViewExtensions.swift in Sources */,
+				60EB4CBC20434FF100F550A5 /* ViewHelper.swift in Sources */,
 				60EB4CA62042E04200F550A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

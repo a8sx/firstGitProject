@@ -20,6 +20,12 @@ class SimpleLabelView: UIView{
         fatalError("init(coder:) has not been implemented")
     }
     
+    convenience init(color: UIColor, number: String){
+        self.init()
+        self.backgroundColor = color
+        setUpLabelWithNumber(number: number)
+    }
+    
     func setUpLabelWithNumber(number: String){
         self.addSubview(labelWithNumber)
         
