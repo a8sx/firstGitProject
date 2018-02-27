@@ -35,7 +35,6 @@ class FirstViewController: UIViewController {
         
         mainView.addSubviews([centerView,topLeftView, topRightView, bottomRightView, bottomLeftView])
         centerView.backgroundColor = .red
-       
     }
     
     func setViewLayout(){
@@ -46,6 +45,5 @@ class FirstViewController: UIViewController {
         bottomLeftView.anchorInCorner(.bottomLeft, xPad: 10, yPad: 10, width: 50, height: 50)
         bottomRightView.anchorInCorner(.bottomRight, xPad: 10, yPad: 10, width: 50, height: 50)
     }
-
 }
 

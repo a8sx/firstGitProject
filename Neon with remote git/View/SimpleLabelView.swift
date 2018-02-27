@@ -9,8 +9,14 @@
 import UIKit
 
 class SimpleLabelView: UIView{
-    
     lazy var labelWithNumber = UILabel()
+    var labelNumber = ""
+    
+    override var frame: CGRect {
+        didSet {
+            setUpLabelWithNumber(number: labelNumber)
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +29,7 @@ class SimpleLabelView: UIView{
     convenience init(color: UIColor, number: String){
         self.init()
         self.backgroundColor = color
-        setUpLabelWithNumber(number: number)
+        self.labelNumber = number
     }
     
     func setUpLabelWithNumber(number: String){
